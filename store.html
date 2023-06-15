@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 20px;
+      max-width: 600px;
+      width: 100%;
+      justify-items: center;
+    }
+    
+    .grid-item {
+      width: 210px;
+      height: 210px;
+      background-color: #f8f8f8;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; /* 改為居中 */
+      align-items: center;
+      padding: 10px;
+      box-sizing: border-box;
+    }
+    
+    .grid-item img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+    }
+    
+    .grid-item .title {
+      text-align: center;
+      font-family: "Futura", sans-serif;
+      font-size: 14px;
+      margin-top: 10px; /* 增加上方空白 */
+    }
+    
+    /* 導航欄樣式 */
+    nav {
+      background-color: #f8f8f8;
+      padding: 2pt;
+      text-align: center;
+      margin-top: 2pt;
+    }
+    
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    
+    nav li {
+      display: inline-block;
+      margin-right: 20px;
+    }
+    
+    nav a {
+      text-decoration: none;
+      color: black;
+      font-family: "Futura", sans-serif;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="/Users/kai._820/Desktop/coding/portfolio/kaiCportfolio.html">Home</a></li>
+        <li><a href="/Users/kai._820/Desktop/coding/portfolio/about.html">About Me</a></li>
+        <li><a href="/Users/kai._820/Desktop/coding/portfolio/works.html">Works</a></li>
+        <li><a href="/Users/kai._820/Desktop/coding/portfolio/store.html">Store</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <div class="container">
+    <div class="grid">
+      <div class="grid-item">
+        <img src="/Users/kai._820/Desktop/coding/portfolio/kaiCaa.jpg" alt="Escape from school">
+        <div class="title">Escape from school</div>
+      </div>
+      <div class="grid-item">
+        <img src="/Users/kai._820/Desktop/coding/portfolio/aryn2.jpg" alt="Franz Erhard Walther & Kai.C">
+        <div class="title">Franz Erhard Walther & Kai.C</div>
+      </div>
+      <div class="grid-item">
+        <img src="/Users/kai._820/Desktop/coding/portfolio/shirt kai.C-8.jpg" alt="Kai.C brand shirt">
+        <div class="title">Kai.C brand shirt</div>
+      </div>
+      <div class="grid-item">
+        <img src="/Users/kai._820/Desktop/coding/portfolio/Vag.jpg" alt="Vagrant project - Kai.C">
+        <div class="title">Vagrant project - Kai.C</div>
+      </div>
+      <div class="grid-item">
+        <img src="/Users/kai._820/Desktop/coding/portfolio/Final.png" alt="X to earn WEB3.0 Project">
+        <div class="title">X to earn WEB3.0 Project</div>
+      </div>
+      <div class="grid-item">
+      <div class="title">FUTURE</div>
+    </div>
+  </div>
+</body>
+</html>

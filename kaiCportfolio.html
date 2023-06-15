@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>個人作品集 - KaiC</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    
+    #kaiC-container, #kaiC-container2, #kaiC-container3 {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+      text-align: center;
+      overflow: hidden;
+    }
+    
+    #kaiC-container img, #kaiC-container2 img, #kaiC-container3 img {
+      max-width: 100%;
+      object-fit: cover;
+      display: inline-block;
+      margin-left: 20px;
+    }
+
+    #kaiC-container img {
+      animation: marquee1 24s linear infinite;
+    }
+    
+    #kaiC-container2 img {
+      animation: marquee2 24s linear infinite;
+    }
+    
+    #kaiC-container3 img {
+      animation: marquee3 24s linear infinite;
+    }
+
+    @media screen and (max-width: 600px) {
+      #kaiC-container img, #kaiC-container2 img, #kaiC-container3 img {
+        max-width: 80%;
+      }
+    }
+
+    @keyframes marquee1 {
+      0% { transform: translateX(0%); }
+      100% { transform: translateX(-100%); }
+    }
+    
+    @keyframes marquee2 {
+      0% { transform: translateX(100%); }
+      100% { transform: translateX(-100%); }
+    }
+    
+    @keyframes marquee3 {
+      0% { transform: translateX(200%); }
+      100% { transform: translateX(-100%); }
+    }
+    
+    /* 導覽欄樣式 */
+    nav {
+      background-color: #f8f8f8;
+      padding: 2pt;
+      text-align: center;
+      margin-top: 2pt;
+    }
+    
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    
+    nav li {
+      display: inline-block;
+      margin-right: 20px;
+    }
+    
+    nav a {
+      text-decoration: none;
+      color: black; /* 黑色字體 */
+      font-family: "Futura", sans-serif; /* Futura字體 */
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div id="kaiC-container">
+      <img src="/Users/kai._820/Desktop/coding/portfolio/kaiccc.jpg" alt="kaiC">
+    </div>
+    <div id="kaiC-container2">
+      <img src="/Users/kai._820/Desktop/coding/portfolio/kaicc.jpg" alt="kaiC">
+    </div>
+    <div id="kaiC-container3">
+      <img src="/Users/kai._820/Desktop/coding/portfolio/kaiccccc.jpg" alt="kaiC">
+    </div>
+
+    <nav>
+      <ul>
+        <li><a href="/Users/kai._820/Desktop/coding/portfolio/kaiCportfolio.html">Home</a></li>
+        <li><a href="/Users/kai._820/Desktop/coding/portfolio/about.html">About Me</a></li>
+        <li><a href="/Users/kai._820/Desktop/coding/portfolio/works.html">Works</a></li>
+        <li><a href="/Users/kai._820/Desktop/coding/portfolio/store.html">Store</a></li>
+      </ul>
+    </nav>
+  </header>
+</body>
+</html>
